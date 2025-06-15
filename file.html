@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .analysis {
+            background-color: #eef;
+            padding: 10px;
+        }
+        .stats {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Accident Hotspot Analyzer : Outcomes</h1>
+    <h1>Accident Data Summary</h1>
+
+    <h2>Sample Records</h2>
+    <table>
+        <tr>
+            <th>Accident ID</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Location</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Weather</th>
+            <th>Road</th>
+            <th>Vehicles</th>
+            <th>Casualties</th>
+            <th>Cause</th>
+        </tr>
+        <tr>
+            <td>b0dd6f57</td>
+            <td>4/19/2023</td>
+            <td>6:39</td>
+            <td>Mumbai, India</td>
+            <td>13.488432</td>
+            <td>-73.290682</td>
+            <td>Snow</td>
+            <td>Snowy</td>
+            <td>5</td>
+            <td>7</td>
+            <td>Reckless Driving</td>
+        </tr>
+        <tr>
+            <td>debfad09</td>
+            <td>1/17/2023</td>
+            <td>2:47</td>
+            <td>São Paulo, Brazil</td>
+            <td>-37.798317</td>
+            <td>-32.244242</td>
+            <td>Clear</td>
+            <td>Icy</td>
+            <td>4</td>
+            <td>1</td>
+            <td>Drunk Driving</td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </table>
+
+    <h2>Statistics</h2>
+    <div class="stats">
+        <p><strong>Total Records:</strong> 10,000</p>
+        <p><strong>Average Vehicles Involved:</strong> 2.999</p>
+        <p><strong>Average Casualties:</strong> 4.99</p>
+        <p><strong>Latitude Range:</strong> -89.99 to 89.99</p>
+        <p><strong>Longitude Range:</strong> -179.96 to 179.98</p>
+    </div>
+
+    <h2>Accidents Per Hour</h2>
+    <div class="analysis">
+        <pre>
+0  — 447
+1  — 402
+2  — 397
+3  — 401
+4  — 435
+5  — 414
+6  — 434
+7  — 447
+8  — 415
+9  — 392
+10 — 425
+11 — 437
+12 — 411
+13 — 416
+14 — 395
+15 — 406
+16 — 423
+17 — 439
+18 — 434
+19 — 426
+20 — 391
+21 — 381
+22 — 401
+23 — 431
+        </pre>
+    </div>
+    <h2 style="color: #333; margin-top: 40px;">
+    Visual Analysis Of Data
+</h2>
+<div style="text-align: center; margin-bottom: 40px;">
+    <img src="accident per hour.png" alt="Accident Per Hour" width="600" style="border: 1px solid #ccc; border-radius: 8px; box-shadow: 2px 2px 12px rgba(0,0,0,0.1);">
+    <p style="font-style: italic; color: #555;">Figure: Accidents distributed by hour of the day</p>
+</div>
+<h2>Accidents Due To Weather Conditions</h2>
+
+<!-- Textual Summary -->
+<div style="margin-bottom: 30px;">
+    <table style="width: 50%; border-collapse: collapse; font-family: Arial, sans-serif;">
+        <thead>
+            <tr style="background-color: #f2f2f2;">
+                <th style="border: 1px solid #ccc; padding: 8px;">Weather Condition</th>
+                <th style="border: 1px solid #ccc; padding: 8px;">Number of Accidents</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Rain</td><td style="border: 1px solid #ccc; padding: 8px;">1681</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Clear</td><td style="border: 1px solid #ccc; padding: 8px;">1674</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Hail</td><td style="border: 1px solid #ccc; padding: 8px;">1673</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Snow</td><td style="border: 1px solid #ccc; padding: 8px;">1667</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Fog</td><td style="border: 1px solid #ccc; padding: 8px;">1660</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Storm</td><td style="border: 1px solid #ccc; padding: 8px;">1645</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Visual Chart -->
+<h3 style="margin-top: 20px;">Visual Representation Of Accidents Due To Weather</h3>
+<div style="text-align: center; margin-bottom: 40px;">
+    <img src="Weather Conditions Chart.png" alt="Weather Conditions Chart" width="600"
+         style="border: 1px solid #ccc; border-radius: 8px; box-shadow: 2px 2px 12px rgba(0,0,0,0.1);">
+    <p style="font-style: italic; color: #555;">Figure: Accidents categorized by weather conditions</p>
+</div>
+<h2>Accidents Due To Road Conditions</h2>
+
+<!-- Textual Summary -->
+<div style="margin-bottom: 30px;">
+    <table style="width: 60%; border-collapse: collapse; font-family: Arial, sans-serif;">
+        <thead>
+            <tr style="background-color: #f2f2f2;">
+                <th style="border: 1px solid #ccc; padding: 8px;">Road Condition</th>
+                <th style="border: 1px solid #ccc; padding: 8px;">Number of Accidents</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Dry</td><td style="border: 1px solid #ccc; padding: 8px;">1729</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Gravel</td><td style="border: 1px solid #ccc; padding: 8px;">1702</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Wet</td><td style="border: 1px solid #ccc; padding: 8px;">1680</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Icy</td><td style="border: 1px solid #ccc; padding: 8px;">1653</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Snowy</td><td style="border: 1px solid #ccc; padding: 8px;">1618</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Under Construction</td><td style="border: 1px solid #ccc; padding: 8px;">1618</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Visual Chart -->
+<h3 style="margin-top: 20px;">Visual Representation Of Accidents Due To Road Conditions</h3>
+<div style="text-align: center; margin-bottom: 40px;">
+    <img src="road_conditions_chart.png" alt="Road Conditions Chart" width="600"
+         style="border: 1px solid #ccc; border-radius: 8px; box-shadow: 2px 2px 12px rgba(0,0,0,0.1);">
+    <p style="font-style: italic; color: #555;">Figure: Accidents categorized by road conditions</p>
+</div>
+<h2>Cause of Accidents</h2>
+
+<!-- Textual Summary -->
+<div style="margin-bottom: 30px;">
+    <table style="width: 60%; border-collapse: collapse; font-family: Arial, sans-serif;">
+        <thead>
+            <tr style="background-color: #f2f2f2;">
+                <th style="border: 1px solid #ccc; padding: 8px;">Cause</th>
+                <th style="border: 1px solid #ccc; padding: 8px;">Number of Accidents</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Drunk Driving</td><td style="border: 1px solid #ccc; padding: 8px;">1716</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Reckless Driving</td><td style="border: 1px solid #ccc; padding: 8px;">1685</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Weather Conditions</td><td style="border: 1px solid #ccc; padding: 8px;">1657</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Speeding</td><td style="border: 1px solid #ccc; padding: 8px;">1656</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Mechanical Failure</td><td style="border: 1px solid #ccc; padding: 8px;">1653</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Distracted Driving</td><td style="border: 1px solid #ccc; padding: 8px;">1633</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Visual Chart -->
+<h3 style="margin-top: 20px;">Visual Representation Of Cause Of Accidents</h3>
+<div style="text-align: center; margin-bottom: 40px;">
+    <img src="cause_of_accidents_chart.png" alt="Cause of Accidents Chart" width="600"
+         style="border: 1px solid #ccc; border-radius: 8px; box-shadow: 2px 2px 12px rgba(0,0,0,0.1);">
+    <p style="font-style: italic; color: #555;">Figure: Accidents categorized by their primary causes</p>
+</div>
+<h2>Top Accident Locations</h2>
+
+<!-- Textual Summary -->
+<div style="margin-bottom: 30px;">
+    <table style="width: 70%; border-collapse: collapse; font-family: Arial, sans-serif;">
+        <thead>
+            <tr style="background-color: #f2f2f2;">
+                <th style="border: 1px solid #ccc; padding: 8px;">Location</th>
+                <th style="border: 1px solid #ccc; padding: 8px;">Number of Accidents</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">São Paulo, Brazil</td><td style="border: 1px solid #ccc; padding: 8px;">1032</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">New York, USA</td><td style="border: 1px solid #ccc; padding: 8px;">1016</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Beijing, China</td><td style="border: 1px solid #ccc; padding: 8px;">1014</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Sydney, Australia</td><td style="border: 1px solid #ccc; padding: 8px;">1006</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Toronto, Canada</td><td style="border: 1px solid #ccc; padding: 8px;">1003</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">London, UK</td><td style="border: 1px solid #ccc; padding: 8px;">1000</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Paris, France</td><td style="border: 1px solid #ccc; padding: 8px;">995</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Tokyo, Japan</td><td style="border: 1px solid #ccc; padding: 8px;">989</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Mumbai, India</td><td style="border: 1px solid #ccc; padding: 8px;">987</td></tr>
+            <tr><td style="border: 1px solid #ccc; padding: 8px;">Berlin, Germany</td><td style="border: 1px solid #ccc; padding: 8px;">958</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Visual Chart -->
+<h3 style="margin-top: 20px;">Visual Representation Of Accidents At Locations</h3>
+<div style="text-align: center; margin-bottom: 40px;">
+    <img src="top_accident_locations_chart.png" alt="Top Accident Locations Chart" width="600"
+         style="border: 1px solid #ccc; border-radius: 8px; box-shadow: 2px 2px 12px rgba(0,0,0,0.1);">
+    <p style="font-style: italic; color: #555;">Figure: Number of accidents by location</p>
+</div>
+<h2>Clustered Data</h2>
+
+<!-- Sample Data Table (first 5 rows) -->
+<div style="margin-bottom: 30px; overflow-x: auto;">
+    <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 14px;">
+        <thead>
+            <tr style="background-color: #f2f2f2;">
+                <th style="border: 1px solid #ccc; padding: 6px;">Accident ID</th>
+                <th style="border: 1px solid #ccc; padding: 6px;">Date</th>
+                <th style="border: 1px solid #ccc; padding: 6px;">Time</th>
+                <th style="border: 1px solid #ccc; padding: 6px;">Location</th>
+                <th style="border: 1px solid #ccc; padding: 6px;">Latitude</th>
+                <th style="border: 1px solid #ccc; padding: 6px;">Longitude</th>
+                <th style="border: 1px solid #ccc; padding: 6px;">Weather Condition</th>
+                <th style="border: 1px solid #ccc; padding: 6px;">Road Condition</th>
+                <th style="border: 1px solid #ccc; padding: 6px;">Vehicles Involved</th>
+                <th style="border: 1px solid #ccc; padding: 6px;">Casualties</th>
+                <th style="border: 1px solid #ccc; padding: 6px;">Cause</th>
+                <th style="border: 1px solid #ccc; padding: 6px;">Hour</th>
+                <th style="border: 1px solid #ccc; padding: 6px;">Cluster</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 6px;">b0dd6f57</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">4/19/2023</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">06:39</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Mumbai, India</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">13.488432</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">-73.290682</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Snow</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Snowy</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">5</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">7</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Reckless Driving</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">6</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">2</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 6px;">debfad09</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">1/17/2023</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">02:47</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">São Paulo, Brazil</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">-37.798317</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">-32.244242</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Clear</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Icy</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">4</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">1</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Drunk Driving</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">2</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">0</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 6px;">6d69aa36</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">4/9/2024</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">02:55</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Sydney, Australia</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">33.767869</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">104.869018</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Rain</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Snowy</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">1</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">7</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Reckless Driving</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">2</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">1</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 6px;">425bb1f0</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">10/10/2023</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">11:23</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Tokyo, Japan</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">-0.378031</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">-165.825855</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Storm</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Wet</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">4</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">0</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Drunk Driving</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">11</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">2</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ccc; padding: 6px;">90d5cf62</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">1/2/2023</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">12:07</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Beijing, China</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">41.254879</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">-30.776959</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Storm</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Snowy</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">3</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">9</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">Reckless Driving</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">12</td>
+                <td style="border: 1px solid #ccc; padding: 6px;">0</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Visual Chart -->
+<h3 style="margin-top: 20px;">Visual Representation Of Clusters</h3>
+<div style="text-align: center; margin-bottom: 40px;">
+    <img src="clusters_visualization.png" alt="Clusters Visualization Chart" width="600" 
+         style="border: 1px solid #ccc; border-radius: 8px; box-shadow: 2px 2px 12px rgba(0,0,0,0.1);">
+    <p style="font-style: italic; color: #555;">Figure: Clustering of accidents based on location, time and cause</p>
+</div>
+<h2>Poisson Distribution</h2>
+<p>Accidents Per Day are: <strong>14.0</strong></p>
+
+<h3>Visual Representation Of Accident Per Day</h3>
+<div style="text-align: center;">
+    <img src="accidents_per_day_poisson.png" alt="Poisson Distribution - Accidents Per Day" width="600" style="border: 1px solid #ccc; border-radius: 8px;">
+</div>
+<h2>Principal Component Analysis (PCA)</h2>
+
+<h3>Cleaned Data:</h3>
+<pre style="background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; max-height: 300px;">
+Accident ID        Date                Time           Location  
+0       b0dd6f57   4/19/2023 2025-06-15 06:39:00      Mumbai, India   
+1       debfad09   1/17/2023 2025-06-15 02:47:00  São Paulo, Brazil   
+2       6d69aa36    4/9/2024 2025-06-15 02:55:00  Sydney, Australia   
+3       425bb1f0  10/10/2023 2025-06-15 11:23:00       Tokyo, Japan   
+4       90d5cf62    1/2/2023 2025-06-15 12:07:00     Beijing, China   
+...          ...         ...                 ...                ...   
+9995    2d26c7e2   1/10/2023 2025-06-15 18:41:00      Paris, France   
+9996    4d236cfd    4/4/2023 2025-06-15 16:48:00  São Paulo, Brazil   
+9997    1d32722f   9/30/2024 2025-06-15 14:43:00     Beijing, China   
+9998    64722572  10/27/2024 2025-06-15 18:34:00  Sydney, Australia   
+9999    96272c1b  10/26/2024 2025-06-15 10:30:00    Toronto, Canada   
+</pre>
+
+<h3>PCA Data:</h3>
+<pre style="background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; max-height: 200px;">
+       PC1       PC2
+0  0.184325 -0.931150
+1  1.579125 -0.355047
+2  1.332763 -0.601410
+3  0.904454  0.812351
+4 -1.168786 -1.056216
+...     ...       ...
+9995 -0.550995  0.789622
+9996  0.146405  1.077673
+9997 -1.373461 -0.851541
+9998 -0.304632  1.035985
+9999  1.253154  0.956376
+</pre>
+
+<h3>Visual Representation Of PCA Data:</h3>
+<div style="text-align: center;">
+    <img src="pca_visualization.png" alt="PCA Data Visualization" width="600" style="border: 1px solid #ccc; border-radius: 8px;">
+</div>
+<h2>Explained Variance Ratio</h2>
+<p>Explained variance ratio by the two principal components:</p>
+<ul>
+    <li>PC1: 0.5050</li>
+    <li>PC2: 0.4950</li>
+</ul>
+<p><strong>Total variance explained by 2 components: 1.0</strong></p>
+<h2>End Results (Conclusion)</h2>
+
+<h3>Top Five Places Are:</h3>
+<table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; width: 80%; margin: auto;">
+  <thead style="background-color: #f2f2f2;">
+    <tr>
+      <th>Location</th>
+      <th>Hour</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Tokyo, Japan</td><td>23</td><td>61</td></tr>
+    <tr><td>London, UK</td><td>0</td><td>59</td></tr>
+    <tr><td>Sydney, Australia</td><td>18</td><td>58</td></tr>
+    <tr><td>Toronto, Canada</td><td>11</td><td>58</td></tr>
+    <tr><td>Paris, France</td><td>4</td><td>56</td></tr>
+  </tbody>
+</table>
+
+<div style="max-width: 700px; margin: 20px auto; font-size: 16px; line-height: 1.5;">
+  <p>📍 On <strong>Tokyo, Japan</strong> at 23:00 has <strong>(61)</strong> Most Accidents</p>
+  <p>📍 On <strong>London, UK</strong> at 0:00 has <strong>(59)</strong> Most Accidents</p>
+  <p>📍 On <strong>Sydney, Australia</strong> at 18:00 has <strong>(58)</strong> Most Accidents</p>
+  <p>📍 On <strong>Toronto, Canada</strong> at 11:00 has <strong>(58)</strong> Most Accidents</p>
+  <p>📍 On <strong>Paris, France</strong> at 4:00 has <strong>(56)</strong> Most Accidents</p>
+</div>
+
+<h3>Visual Representation Of Data:</h3>
+<div style="text-align: center;">
+  <img src="end_results_visualization.png" alt="Visual Representation of End Results" width="600" style="border: 1px solid #ccc; border-radius: 8px;">
+</div>
+
+</body>
+</html>
